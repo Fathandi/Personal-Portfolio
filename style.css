@@ -987,9 +987,16 @@ footer{
 
 @media only screen and (max-width: 540px){
     .featured-name{
-        font-size: 40px;
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--text-color-second);
+        margin-block: 20px;
     }
-
+    .typedText{
+        font-size: 15px;
+        text-transform: capitalize;
+        color: var(--text-color-third);
+    }
     .project-box{
         width: 100%;
     }
