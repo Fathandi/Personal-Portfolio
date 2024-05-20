@@ -188,7 +188,7 @@ nav{
     margin-block: 20px;
 }
 .typedText{
-    font-size: 40px;
+    font-size: 20px;
     text-transform: capitalize;
     color: var(--text-color-third);
 }
