@@ -1008,6 +1008,11 @@ footer{
         text-transform: capitalize;
         color: var(--text-color-third);
     }
+    .social_icons{
+        display: flex;
+        position: center;
+        justify-content: center;
+    }
     .project-box{
         width: 100%;
     }
