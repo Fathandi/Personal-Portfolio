@@ -180,6 +180,8 @@ nav{
     padding: 3px 8px;
     font-size: 12px;
     border-radius: 5px;
+    bottom: -30px;
+    position: relative;
 }
 .featured-name{
     font-size: 40px;
@@ -991,6 +993,15 @@ footer{
         font-weight: 600;
         color: var(--text-color-second);
         margin-block: 20px;
+    }
+    .featured-text-card span{
+        background: var(--third-color);
+        color: var(--color-white);
+        padding: 3px 8px;
+        font-size: 12px;
+        border-radius: 5px;
+        bottom: -10px;
+        position: relative;
     }
     .typedText{
         font-size: 15px;
