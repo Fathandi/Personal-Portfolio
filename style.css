@@ -223,6 +223,10 @@ nav{
 .icon:hover{
     color: var(--first-color);
 }
+.icon a {
+    text-decoration: none;
+    color: inherit;
+}
 
 /* ----- FEATURED IMAGE BOX ----- */
 .featured-image{
