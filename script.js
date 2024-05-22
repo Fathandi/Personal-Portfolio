@@ -115,18 +115,29 @@ function scrollActive() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  emailjs.init('7K2aOKMaqg5DT64wQ'); // Ganti dengan Public Key dari EmailJS
+  emailjs.init('7K2aOKMaqg5DT64wQ'); // Menggunakan Public ID yang baru
 
   document.getElementById('sendBtn').addEventListener('click', function (event) {
       event.preventDefault();
 
-      const serviceID = 'service_9vagnoe'; // Ganti dengan Service ID dari EmailJS
-      const templateID = 'template_zq7n4mh'; // Ganti dengan Template ID dari EmailJS
+      const serviceID = 'service_9vagnoe'; // Menggunakan Service ID yang baru
+      const templateID = 'template_zq7n4mh'; // Menggunakan Template ID yang baru
+
+      // Ambil nilai dari input nama, email, dan pesan
+      const senderName = document.getElementById('name').value;
+      const senderEmail = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      // Pastikan input nama, email, dan pesan tidak kosong sebelum mengirim
+      if (!senderName || !senderEmail || !message) {
+          alert('Please fill in all fields.');
+          return;
+      }
 
       const templateParams = {
-          name: document.getElementById('name').value,
-          email: document.getElementById('email').value,
-          message: document.getElementById('message').value
+          from_name: senderName,
+          from_email: senderEmail,
+          message_html: message
       };
 
       emailjs.send(serviceID, templateID, templateParams)
