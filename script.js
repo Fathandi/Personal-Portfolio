@@ -114,4 +114,30 @@ function scrollActive() {
   })
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  emailjs.init('7K2aOKMaqg5DT64wQ'); // Ganti dengan Public Key dari EmailJS
+
+  document.getElementById('sendBtn').addEventListener('click', function (event) {
+      event.preventDefault();
+
+      const serviceID = 'service_9vagnoe'; // Ganti dengan Service ID dari EmailJS
+      const templateID = 'template_zq7n4mh'; // Ganti dengan Template ID dari EmailJS
+
+      const templateParams = {
+          name: document.getElementById('name').value,
+          email: document.getElementById('email').value,
+          message: document.getElementById('message').value
+      };
+
+      emailjs.send(serviceID, templateID, templateParams)
+          .then(response => {
+              console.log('SUCCESS!', response.status, response.text);
+              alert('Your message has been sent successfully!');
+          }, error => {
+              console.log('FAILED...', error);
+              alert('Failed to send your message. Please try again later.');
+          });
+  });
+});
+
 window.addEventListener('scroll', scrollActive)
