@@ -9,6 +9,7 @@ function myMenuFunction() {
   }
 }
 
+
 /* ----- BLUE-BTN FUNCTION ----- */
 function redirectToAssistant() {
   window.open('assistant.html', '_blank');
@@ -120,6 +121,9 @@ function scrollActive() {
   })
 }
 
+
+/* ----- CONTACT BOX EMAIL JS -----*/
+
 document.addEventListener('DOMContentLoaded', function () {
   emailjs.init('7K2aOKMaqg5DT64wQ'); // Menggunakan Public ID yang baru
 
@@ -136,7 +140,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Pastikan input nama, email, dan pesan tidak kosong sebelum mengirim
     if (!senderName || !senderEmail || !message) {
-      alert('Please fill in all fields.');
+      Swal.fire({
+        title: "Please fill in all fields!",
+        timer: 2000,
+        showConfirmButton: false
+      });
       return;
     }
 
@@ -149,10 +157,20 @@ document.addEventListener('DOMContentLoaded', function () {
     emailjs.send(serviceID, templateID, templateParams)
       .then(response => {
         console.log('SUCCESS!', response.status, response.text);
-        alert('Your message has been sent successfully!');
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: "Your message has been sent successfully!",
+          showConfirmButton: false,
+          timer: 1500
+        });
       }, error => {
         console.log('FAILED...', error);
-        alert('Failed to send your message. Please try again later.');
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Failed to send your message. Please try again later",
+        });
       });
   });
 });
