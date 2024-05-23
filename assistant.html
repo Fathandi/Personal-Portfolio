@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Jazari | Apriandi's Virtual Assistant</title>
+    <link rel="icon" href="profile.jpg">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="assistant.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="chatbox">
+            <div class="chatbox-header">
+                <i class="uil uil-robot"></i>
+                <p style="margin-left: 10px;">Al-Jazari</p>
+            </div>
+            <div class="chatbox-body">
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Pesan chat akan ditampilkan di sini -->
+                </div>
+            </div>
+            <div class="chatbox-footer">
+                <input type="text" id="user-input" placeholder="Ketik pesan...">
+                <button onclick="jawabPertanyaan()">Kirim</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
