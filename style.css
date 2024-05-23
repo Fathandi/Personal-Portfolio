@@ -205,6 +205,9 @@ nav{
 .featured-text-btn>.blue-btn:hover{
     background: var(--first-color-hover);
 }
+.blue-btn {
+    text-decoration: none;
+}
 .social_icons{
     display: flex;
     margin-top: 5em;
