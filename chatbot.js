@@ -10,155 +10,432 @@ function jawabPertanyaan() {
 
     let jawaban = '';
 
+
+    // Front End & Back End
     if (
-        pertanyaanLower.includes("nama") &&
-        pertanyaanLower.includes("lengkap") &&
+        pertanyaanLower.includes("keahlian") &&
+        pertanyaanLower.includes("front end") &&
+        pertanyaanLower.includes("back end") &&
         pertanyaanLower.includes("fathih")) {
-        jawaban = "Nama lengkap Fathih adalah Fathih Apriandi. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
-    }
+            jawaban = "Fathih menguasai HTML, CSS, dan JavaScript beserta dengan frameworknya seperti Bootstrap, " +
+            "Vue, React, dan Angular, Fathih juga cukup ahli dalam bahasa pemrogramman " +
+            "seperti PHP, Java, Python, dan C++. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
 
     else if (
-        pertanyaanLower.includes("siapa") &&
-        pertanyaanLower.includes("fathih") &&
-        pertanyaanLower.includes("apriandi")) {
-        jawaban = "Fathih Apriandi hanyalah seorang programmer SMA yang kebetulan lewat. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
-    }
-
-    else if (
-        pertanyaanLower.includes("siapa") &&
-        pertanyaanLower.includes("apriandi")) {
-        jawaban = "Fathih Apriandi hanyalah seorang programmer SMA yang kebetulan lewat. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
-    }
-
-    else if (
-        pertanyaanLower.includes("kapan") &&
-        pertanyaanLower.includes("tanggal") &&
-        pertanyaanLower.includes("lahir") &&
+        pertanyaanLower.includes("keahlian") &&
+        pertanyaanLower.includes("frontend") &&
+        pertanyaanLower.includes("backend") &&
         pertanyaanLower.includes("fathih")) {
-        jawaban = "Tanggal lahir Fathih adalah 21 April 2007. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
-    }
+            jawaban = "Fathih menguasai HTML, CSS, dan JavaScript beserta dengan frameworknya seperti Bootstrap, " +
+            "Vue, React, dan Angular, Fathih juga cukup ahli dalam bahasa pemrogramman " +
+            "seperti PHP, Java, Python, dan C++. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
 
     else if (
-        pertanyaanLower.includes("di") &&
-        pertanyaanLower.includes("mana") &&
-        pertanyaanLower.includes("tempat") &&
-        pertanyaanLower.includes("lahir") &&
+        pertanyaanLower.includes("kemampuan") &&
+        pertanyaanLower.includes("front end") &&
+        pertanyaanLower.includes("back end") &&
         pertanyaanLower.includes("fathih")) {
-        jawaban = "Tempat lahir Fathih adalah Tangerang. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
-    }
+            jawaban = "Fathih menguasai HTML, CSS, dan JavaScript beserta dengan frameworknya seperti Bootstrap, " +
+            "Vue, React, dan Angular, Fathih juga cukup ahli dalam bahasa pemrogramman " +
+            "seperti PHP, Java, Python, dan C++. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
 
     else if (
-        pertanyaanLower.includes("apa") &&
-        pertanyaanLower.includes("hobi") &&
+        pertanyaanLower.includes("kemampuan") &&
+        pertanyaanLower.includes("frontend") &&
+        pertanyaanLower.includes("backend") &&
         pertanyaanLower.includes("fathih")) {
-        jawaban = "Hobi Fathih adalah bermain video game. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
-    }
+            jawaban = "Fathih menguasai HTML, CSS, dan JavaScript beserta dengan frameworknya seperti Bootstrap, " +
+            "Vue, React, dan Angular, Fathih juga cukup ahli dalam bahasa pemrogramman " +
+            "seperti PHP, Java, Python, dan C++. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+
+    // Back End
+    else if (
+        pertanyaanLower.includes("keahlian") && 
+        pertanyaanLower.includes("back end") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Fathih cukup ahli dalam bahasa pemrogramman seperti PHP, Java, Python, dan C++. " +
+            "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
 
     else if (
-        pertanyaanLower.includes("apa") &&
-        pertanyaanLower.includes("olahraga") &&
+        pertanyaanLower.includes("kemampuan") && 
+        pertanyaanLower.includes("back end") &&
         pertanyaanLower.includes("fathih")) {
-        jawaban = "Olahraga yang dilakukan Fathih adalah berlatih gulat tangan dan membentuk badan. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
-    }
+            jawaban = "Fathih cukup ahli dalam bahasa pemrogramman seperti PHP, Java, Python, dan C++. " +
+            "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
 
     else if (
-        pertanyaanLower.includes("apa") &&
-        pertanyaanLower.includes("pekerjaan") &&
+        pertanyaanLower.includes("keahlian") && 
+        pertanyaanLower.includes("backend") &&
         pertanyaanLower.includes("fathih")) {
-        jawaban = "Pekerjaan Fathih saat ini adalah pelajar di sekolah. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
-    }
+            jawaban = "Fathih cukup ahli dalam bahasa pemrogramman seperti PHP, Java, Python, dan C++. " +
+            "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
 
     else if (
-        pertanyaanLower.includes("apa") &&
-        pertanyaanLower.includes("makanan") &&
-        pertanyaanLower.includes("kesukaan") &&
+        pertanyaanLower.includes("kemampuan") && 
+        pertanyaanLower.includes("backend") &&
         pertanyaanLower.includes("fathih")) {
-        jawaban = "Makanan kesukaan Fathih adalah hidangan ayam dan daging yang tinggi akan protein. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
-    }
+            jawaban = "Fathih cukup ahli dalam bahasa pemrogramman seperti PHP, Java, Python, dan C++. " +
+            "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+
+    // Front End
+    else if (
+        pertanyaanLower.includes("keahlian") &&
+        pertanyaanLower.includes("front end") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Fathih menguasai HTML, CSS, dan JavaScript beserta dengan frameworknya seperti Bootstrap, " +
+            "Vue, React, dan Angular. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
 
     else if (
-        pertanyaanLower.includes("apa") &&
-        pertanyaanLower.includes("minuman") &&
-        pertanyaanLower.includes("kesukaan") &&
+        pertanyaanLower.includes("kemampuan") &&
+        pertanyaanLower.includes("front end") &&
         pertanyaanLower.includes("fathih")) {
-        jawaban = "Minuman kesukaan Fathih adalah aneka macam minuman coklat. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
-    }
+            jawaban = "Fathih menguasai HTML, CSS, dan JavaScript beserta dengan frameworknya seperti Bootstrap, " +
+            "Vue, React, dan Angular. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
 
     else if (
-        pertanyaanLower.includes("apa") &&
-        pertanyaanLower.includes("hiburan") &&
-        pertanyaanLower.includes("disukai") &&
+        pertanyaanLower.includes("keahlian") &&
+        pertanyaanLower.includes("frontend") &&
         pertanyaanLower.includes("fathih")) {
-        jawaban = "Hiburan yang disukai Fathih adalah menonton serial tokusatsu seperti Ultraman dan Kamen Rider. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
-    }
+            jawaban = "Fathih menguasai HTML, CSS, dan JavaScript beserta dengan frameworknya seperti Bootstrap, " +
+            "Vue, React, dan Angular. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
 
+    else if (
+        pertanyaanLower.includes("kemampuan") &&
+        pertanyaanLower.includes("frontend") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Fathih menguasai HTML, CSS, dan JavaScript beserta dengan frameworknya seperti Bootstrap, " +
+            "Vue, React, dan Angular. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+
+    // Database
+    else if (
+        pertanyaanLower.includes("database") &&
+        pertanyaanLower.includes("dipahami") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Fathih memahami MySQL, PostgreSQL, dan MongoDB dengan baik. Dia memiliki pengalaman " +
+            "dalam mengelola dan menggunakan ketiga jenis basis data ini untuk berbagai aplikasi dan proyeknya. " +
+            "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+    else if (
+        pertanyaanLower.includes("database") &&
+        pertanyaanLower.includes("keahlian") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Fathih memahami MySQL, PostgreSQL, dan MongoDB dengan baik. Dia memiliki pengalaman " +
+            "dalam mengelola dan menggunakan ketiga jenis basis data ini untuk berbagai aplikasi dan proyeknya. " +
+            "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+    else if (
+        pertanyaanLower.includes("database") &&
+        pertanyaanLower.includes("kemampuan") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Fathih memahami MySQL, PostgreSQL, dan MongoDB dengan baik. Dia memiliki pengalaman " +
+            "dalam mengelola dan menggunakan ketiga jenis basis data ini untuk berbagai aplikasi dan proyeknya. " +
+            "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+
+    // Pengalaman Developer
+    else if (
+        pertanyaanLower.includes("pengalaman") &&
+        pertanyaanLower.includes("developer") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Fathih menjadi developer sekitar 1-2 tahun dan telah mendevelop lebih dari 3 website. " +
+            "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+    else if (
+        pertanyaanLower.includes("berapa") &&
+        pertanyaanLower.includes("developer") || pertanyaanLower.includes("pengembangan") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Fathih menjadi developer sekitar 1-2 tahun dan telah mendevelop lebih dari 3 website. " +
+            "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+    else if (
+        pertanyaanLower.includes("pengalaman") &&
+        pertanyaanLower.includes("pengembangan") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Fathih menjadi developer sekitar 1-2 tahun dan telah mendevelop lebih dari 3 website. " +
+            "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+    else if (
+        pertanyaanLower.includes("berapa") &&
+        pertanyaanLower.includes("developer") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Fathih menjadi developer sekitar 1-2 tahun dan telah mendevelop lebih dari 3 website. " +
+            "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+    
+    // Pengalaman Freelancer
+    else if (
+        pertanyaanLower.includes("pengalaman") &&
+        pertanyaanLower.includes("freelancer") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Fathih berpengalaman sebagai freelancer lebih dari 2 tahun (content creator & web developer). " +
+            "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+    else if (
+        pertanyaanLower.includes("berapa") &&
+        pertanyaanLower.includes("freelancer") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Fathih berpengalaman sebagai freelancer lebih dari 2 tahun (content creator & web developer). " +
+            "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+    
+
+    // Pengalaman Intern
     else if (
         pertanyaanLower.includes("pengalaman") &&
         pertanyaanLower.includes("intern") &&
         pertanyaanLower.includes("fathih")) {
-        jawaban = "Fathih memiliki pengalaman lebih dari 2 tahun sebagai intern (network administrator & data analisis). Ayo berikan lebih banyak pertanyaan tentang Fathih!";
-    }
+            jawaban = "Fathih memiliki pengalaman lebih dari 2 tahun sebagai intern (network admin & data analisis). " +
+            "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
 
     else if (
-        pertanyaanLower.includes("berapa") &&
-        pertanyaanLower.includes("lama") &&
-        pertanyaanLower.includes("developer") &&
+        pertanyaanLower.includes("Berapa") &&
+        pertanyaanLower.includes("intern") &&
         pertanyaanLower.includes("fathih")) {
-        jawaban = "Fathih menjadi developer sekitar 1-2 tahun dan telah mendevelop lebih dari 3 website. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
-    }
+            jawaban = "Fathih memiliki pengalaman lebih dari 2 tahun sebagai intern (network admin & data analisis). " +
+            "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
 
     else if (
-        pertanyaanLower.includes("berapa") &&
-        pertanyaanLower.includes("lama") &&
-        pertanyaanLower.includes("freelancer") &&
+        pertanyaanLower.includes("pengalaman") &&
+        pertanyaanLower.includes("magang") &&
         pertanyaanLower.includes("fathih")) {
-        jawaban = "Fathih bekerja sebagai freelancer lebih dari 2 tahun (content creator & web developer). Ayo berikan lebih banyak pertanyaan tentang Fathih!";
-    }
+            jawaban = "Fathih memiliki pengalaman lebih dari 2 tahun sebagai intern (network admin & data analisis). " +
+            "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
 
     else if (
-        pertanyaanLower.includes("apa") &&
-        pertanyaanLower.includes("keahlian") &&
-        pertanyaanLower.includes("front") &&
-        pertanyaanLower.includes("end") &&
-        pertanyaanLower.includes("back") &&
-        pertanyaanLower.includes("end") &&
+        pertanyaanLower.includes("Berapa") &&
+        pertanyaanLower.includes("magang") &&
         pertanyaanLower.includes("fathih")) {
-        jawaban = "Fathih menguasai HTML, CSS, dan JavaScript beserta dengan frameworknya seperti Bootstrap, Vue, React, dan Angular, Fathih juga cukup ahli dalam bahasa pemrogramman seperti PHP, Java, Python, dan C++. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
-    }
+            jawaban = "Fathih memiliki pengalaman lebih dari 2 tahun sebagai intern (network admin & data analisis). " +
+            "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
 
+
+    // Tempat Lahir
     else if (
-        pertanyaanLower.includes("apa") &&
-        pertanyaanLower.includes("keahlian") &&
-        pertanyaanLower.includes("back") &&
-        pertanyaanLower.includes("end") &&
+        pertanyaanLower.includes("di mana") &&
+        pertanyaanLower.includes("lahir") &&
         pertanyaanLower.includes("fathih")) {
-        jawaban = "Fathih cukup ahli dalam bahasa pemrogramman seperti PHP, Java, Python, dan C++. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
-    }
+            jawaban = "Tempat lahir Fathih adalah Tangerang. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
 
     else if (
-        pertanyaanLower.includes("apa") &&
-        pertanyaanLower.includes("database") &&
-        pertanyaanLower.includes("dipahami") &&
+        pertanyaanLower.includes("dimana") &&
+        pertanyaanLower.includes("lahir") &&
         pertanyaanLower.includes("fathih")) {
-        jawaban = "Fathih memahami MySQL, PostgreSQL, dan MongoDB. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
-    }
+            jawaban = "Tempat lahir Fathih adalah Tangerang. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
 
     else if (
-        pertanyaanLower.includes("apa") &&
-        pertanyaanLower.includes("keahlian") &&
-        pertanyaanLower.includes("front") &&
-        pertanyaanLower.includes("end") &&
+        pertanyaanLower.includes("di mana") &&
+        pertanyaanLower.includes("dilahirkan") &&
         pertanyaanLower.includes("fathih")) {
-        jawaban = "Fathih menguasai HTML, CSS, dan JavaScript beserta dengan frameworknya seperti Bootstrap, Vue, React, dan Angular. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
-    }
+            jawaban = "Tempat lahir Fathih adalah Tangerang. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
 
     else if (
-        pertanyaanLower.includes("di") &&
-        pertanyaanLower.includes("mana") &&
+        pertanyaanLower.includes("dimana") &&
+        pertanyaanLower.includes("dilahirkan") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Tempat lahir Fathih adalah Tangerang. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+
+    // Tanggal Lahir
+    else if (
+        pertanyaanLower.includes("kapan") &&
+        pertanyaanLower.includes("lahir") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Fathih lahir pada tanggal 21 April 2007. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+    else if (
+        pertanyaanLower.includes("tanggal") &&
+        pertanyaanLower.includes("lahir") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Fathih lahir pada tanggal 21 April 2007. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+    else if (
+        pertanyaanLower.includes("kapan") &&
+        pertanyaanLower.includes("dilahirkan") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Fathih lahir pada tanggal 21 April 2007. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+    else if (
+        pertanyaanLower.includes("tanggal") &&
+        pertanyaanLower.includes("dilahirkan") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Fathih lahir pada tanggal 21 April 2007. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+    // Hobi
+    else if (
+        pertanyaanLower.includes("hobi") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Hobi Fathih adalah bermain video game. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+
+    // Olahraga
+    else if (
+        pertanyaanLower.includes("olahraga") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Olahraga yang dilakukan Fathih adalah berlatih gulat tangan dan membentuk badan. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }  
+
+
+    // Pekerjaan
+    else if (
+        pertanyaanLower.includes("pekerjaan") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Pekerjaan Fathih saat ini adalah pelajar di sekolah. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+
+    // Makanan Kesukaan
+    else if (
+        pertanyaanLower.includes("makanan") &&
+        pertanyaanLower.includes("kesukaan") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Makanan kesukaan Fathih adalah hidangan ayam dan daging yang tinggi akan protein. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+    else if (
+        pertanyaanLower.includes("makanan") &&
+        pertanyaanLower.includes("disukai") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Makanan kesukaan Fathih adalah hidangan ayam dan daging yang tinggi akan protein. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+
+    // Minuman Kesukaan
+    else if (
+        pertanyaanLower.includes("minuman") &&
+        pertanyaanLower.includes("kesukaan") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Minuman kesukaan Fathih adalah aneka macam minuman coklat. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+    else if (
+        pertanyaanLower.includes("minuman") &&
+        pertanyaanLower.includes("disukai") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Minuman kesukaan Fathih adalah aneka macam minuman coklat. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+
+    // Hiburan
+    else if (
+        pertanyaanLower.includes("hiburan") &&
+        pertanyaanLower.includes("kesukaan") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Hiburan yang disukai Fathih adalah menonton serial tokusatsu seperti Ultraman dan Kamen Rider. " +
+            "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+    else if (
+        pertanyaanLower.includes("hiburan") &&
+        pertanyaanLower.includes("disukai") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Hiburan yang disukai Fathih adalah menonton serial tokusatsu seperti Ultraman dan Kamen Rider. " +
+            "Ayo berikan lebih banyak pertanyaan tentang Fathih!";    
+        }
+    
+    // Sekolah
+    else if (
+        pertanyaanLower.includes("di mana") &&
         pertanyaanLower.includes("pendidikan") &&
         pertanyaanLower.includes("fathih")) {
-        jawaban = "Fathih sedang menempuh pendidikan di SMA Negeri 7 Tangerang tahun 2022-2025. Ayo berikan lebih banyak pertanyaan lagi tentang Fathih!";
-    }
+            jawaban = "Fathih sedang menempuh pendidikan di SMA Negeri 7 Tangerang tahun 2022-2025. Ayo berikan lebih banyak pertanyaan lagi tentang Fathih!";
+        }
+
+    else if (
+        pertanyaanLower.includes("di mana") &&
+        pertanyaanLower.includes("sekolah") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Fathih sedang menempuh pendidikan di SMA Negeri 7 Tangerang tahun 2022-2025. Ayo berikan lebih banyak pertanyaan lagi tentang Fathih!";
+        }
+
+    else if (
+        pertanyaanLower.includes("dimana") &&
+        pertanyaanLower.includes("pendidikan") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Fathih sedang menempuh pendidikan di SMA Negeri 7 Tangerang tahun 2022-2025. Ayo berikan lebih banyak pertanyaan lagi tentang Fathih!";
+        }
+
+    else if (
+        pertanyaanLower.includes("dimana") &&
+        pertanyaanLower.includes("sekolah") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Fathih sedang menempuh pendidikan di SMA Negeri 7 Tangerang tahun 2022-2025. Ayo berikan lebih banyak pertanyaan lagi tentang Fathih!";
+        }
+
+    // Nama Lengkap
+    else if (
+        pertanyaanLower.includes("nama") &&
+        pertanyaanLower.includes("lengkap") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Nama lengkap Fathih adalah Fathih Apriandi. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+    else if (
+        pertanyaanLower.includes("nama") &&
+        pertanyaanLower.includes("panjang") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Nama lengkap Fathih adalah Fathih Apriandi. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        }
+
+    // Tentang Fathih
+    else if (
+        pertanyaanLower.includes("fathih") || pertanyaanLower.includes("apriandi")) {
+            jawaban = "Fathih Apriandi adalah seorang pelajar yang lahir pada tanggal 21 April 2007 di Tangerang. " +
+
+              "Ia memiliki beragam minat dan keahlian di bidang teknologi informasi. Dalam kesehariannya, " +
+              "Fathih suka bermain video game dan berlatih gulat tangan serta membentuk badan. Selain itu, " +
+              "ia juga mempelajari soft skill dan hard skill di luar kurikulum sekolah. " +
+    
+              "Dalam dunia pengembangan, Fathih memiliki pengalaman yang cukup beragam. Ia telah bekerja sebagai " +
+              "network administrator dan data analis selama lebih dari 2 tahun. Sebagai seorang developer, ia telah " +
+              "mengembangkan lebih dari 3 website dalam waktu 1-2 tahun. Selain itu, Fathih juga aktif sebagai freelancer, " +
+              "menjadi content creator dan web developer. " +
+    
+              "Keahlian Fathih mencakup bahasa pemrograman seperti PHP, Java, Python, dan C++. Ia juga memahami database " +
+              "seperti MySQL, PostgreSQL, dan MongoDB. Di bidang front end, Fathih menguasai HTML, CSS, dan JavaScript beserta " +
+              "dengan frameworknya seperti Bootstrap, Vue, React, dan Angular. " +
+    
+              "Saat ini, Fathih sedang menempuh pendidikan di SMA Negeri 7 Tangerang dan bekerja sebagai Front End Developer " +
+              "di PT Inti Telecom Nusantara. Cita-citanya adalah memiliki keahlian yang kompetitif di industri IT dan ia sangat " +
+              "tertarik pada teknologi informasi, kecerdasan buatan, pengembangan perangkat lunak, dan desain. " +
+    
+              "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+            }
 
     else {
         jawaban = "Maaf, saya tidak mengerti pertanyaan Anda. Coba tanyakan pertanyaan lain tentang Fathih.";
@@ -188,7 +465,7 @@ function jawabPertanyaan() {
     }
 
     // Memanggil fungsi untuk menampilkan pesan bot dengan efek pengetikan
-    typeMessage(`Jazari: ${jawaban}`, botMessage, 50);
+    typeMessage(`Jazari: ${jawaban}`, botMessage, 10);
 
     inputField.value = '';
     chatBox.scrollTop = chatBox.scrollHeight;
