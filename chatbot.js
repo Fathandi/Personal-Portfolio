@@ -480,15 +480,7 @@ function jawabPertanyaan() {
     if (pertanyaanCount === 5) {
       tampilkanAlertTerimakasih();
     }  
-}
-
-function tampilkanAlertTerimakasih() {
-    setTimeout(function () {
-        Swal.fire({
-            html: '<h1>p</h1>'
-        });
-    }, 3500);
-}
+}
 
 function tampilkanAlertTerimakasih() {
     setTimeout(function() {
