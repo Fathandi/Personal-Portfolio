@@ -367,6 +367,7 @@ function jawabPertanyaan() {
             jawaban = "Hiburan yang disukai Fathih adalah menonton serial tokusatsu seperti Ultraman dan Kamen Rider. " +
             "Ayo berikan lebih banyak pertanyaan tentang Fathih!";    
         }
+
     
     // Sekolah
     else if (
@@ -397,6 +398,7 @@ function jawabPertanyaan() {
             jawaban = "Fathih sedang menempuh pendidikan di SMA Negeri 7 Tangerang tahun 2022-2025. Ayo berikan lebih banyak pertanyaan lagi tentang Fathih!";
         }
 
+
     // Nama Lengkap
     else if (
         pertanyaanLower.includes("nama") &&
@@ -411,6 +413,7 @@ function jawabPertanyaan() {
         pertanyaanLower.includes("fathih")) {
             jawaban = "Nama lengkap Fathih adalah Fathih Apriandi. Ayo berikan lebih banyak pertanyaan tentang Fathih!";
         }
+
 
     // Tentang Fathih
     else if (
@@ -431,9 +434,10 @@ function jawabPertanyaan() {
               "tertarik pada teknologi informasi, kecerdasan buatan, pengembangan perangkat lunak, dan desain. " +
               "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
             }
-
+    
+    // Tentang Jazari
     else if (
-        pertanyaanLower.includes("Jazari") || pertanyaanLower.includes("Al-Jazari")) {
+        pertanyaanLower.includes("jazari")) {
             jawaban = "jaajaa cantik banget cokkk";
         }
 
