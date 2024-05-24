@@ -1,3 +1,4 @@
+// Fungsi Menjawab Pertanyaan
 function jawabPertanyaan() {
     const inputField = document.getElementById('user-input');
     const chatBox = document.getElementById('chat-messages');
@@ -447,28 +448,18 @@ function jawabPertanyaan() {
     }
 
 
+    // Membuat Element Pesan User
     const userMessage = document.createElement('div');
     userMessage.className = 'chat-message user';
     userMessage.textContent = `Anda: ${pertanyaan}`;
     userMessage.style.backgroundColor = 'rgb(30, 159, 171)';
     chatBox.appendChild(userMessage);
 
+    // Membuat Element Pesan Bot
     const botMessage = document.createElement('div');
     botMessage.className = 'chat-message bot';
     chatBox.appendChild(botMessage);
 
-    // Menambahkan efek pengetikan dari kiri ke kanan
-    function typeMessage(message, element, speed) {
-        let index = 0;
-        const typingInterval = setInterval(function () {
-            if (index <= message.length) {
-                element.textContent = message.slice(0, index); // Menampilkan teks sebagian yang ditambahkan ke dalam elemen
-                index++;
-            } else {
-                clearInterval(typingInterval);
-            }
-        }, speed);
-    }
 
     // Memanggil fungsi untuk menampilkan pesan bot dengan efek pengetikan
     typeMessage(`Al-Jazari: ${jawaban}`, botMessage, 10);
@@ -478,12 +469,28 @@ function jawabPertanyaan() {
 
     pertanyaanCount++;
     if (pertanyaanCount === 5) {
-      tampilkanAlertTerimakasih();
-    }  
-}
+        tampilkanAlertTerimakasih();
+    }
+}
 
+
+// Menambahkan Efek Pengetikan Dari Kiri
+function typeMessage(message, element, speed) {
+    let index = 0;
+    const typingInterval = setInterval(function () {
+        if (index <= message.length) {
+            element.textContent = message.slice(0, index); // Menampilkan teks sebagian yang ditambahkan ke dalam elemen
+            index++;
+        } else {
+            clearInterval(typingInterval);
+        }
+    }, speed);
+}
+
+
+// Fungsi Alert Terimakasih
 function tampilkanAlertTerimakasih() {
-    setTimeout(function() {
+    setTimeout(function () {
         Swal.fire({
             html: '<h1><i class="uil uil-robot" style="font-size: 48px; color: #6e57e0;"></i> Al-Jazari</h1>' +
                 '<br>Terima kasih telah mengajukan 5 pertanyaan kepada saya, ' +
@@ -492,10 +499,10 @@ function tampilkanAlertTerimakasih() {
         });
     }, 3500);
 }
-
 let pertanyaanCount = 0;
 
-// Fungsi untuk menampilkan alert setelah 1,5 detik
+
+// Fungsi Alert Pembuka
 setTimeout(function () {
     Swal.fire({
         html: '<h1><i class="uil uil-robot" style="font-size: 48px; color: #6e57e0;"></i> Al-Jazari</h1>' +
