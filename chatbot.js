@@ -416,26 +416,26 @@ function jawabPertanyaan() {
     else if (
         pertanyaanLower.includes("fathih") || pertanyaanLower.includes("apriandi")) {
             jawaban = "Fathih Apriandi adalah seorang pelajar yang lahir pada tanggal 21 April 2007 di Tangerang. " +
-
               "Ia memiliki beragam minat dan keahlian di bidang teknologi informasi. Dalam kesehariannya, " +
               "Fathih suka bermain video game dan berlatih gulat tangan serta membentuk badan. Selain itu, " +
               "ia juga mempelajari soft skill dan hard skill di luar kurikulum sekolah. " +
-    
               "Dalam dunia pengembangan, Fathih memiliki pengalaman yang cukup beragam. Ia telah bekerja sebagai " +
               "network administrator dan data analis selama lebih dari 2 tahun. Sebagai seorang developer, ia telah " +
               "mengembangkan lebih dari 3 website dalam waktu 1-2 tahun. Selain itu, Fathih juga aktif sebagai freelancer, " +
               "menjadi content creator dan web developer. " +
-    
               "Keahlian Fathih mencakup bahasa pemrograman seperti PHP, Java, Python, dan C++. Ia juga memahami database " +
               "seperti MySQL, PostgreSQL, dan MongoDB. Di bidang front end, Fathih menguasai HTML, CSS, dan JavaScript beserta " +
               "dengan frameworknya seperti Bootstrap, Vue, React, dan Angular. " +
-    
               "Saat ini, Fathih sedang menempuh pendidikan di SMA Negeri 7 Tangerang dan bekerja sebagai Front End Developer " +
               "di PT Inti Telecom Nusantara. Cita-citanya adalah memiliki keahlian yang kompetitif di industri IT dan ia sangat " +
               "tertarik pada teknologi informasi, kecerdasan buatan, pengembangan perangkat lunak, dan desain. " +
-    
               "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
             }
+
+    else if (
+        pertanyaanLower.includes("Jazari") || pertanyaanLower.includes("Al-Jazari")) {
+            jawaban = "jaajaa cantik banget cokkk";
+        }
 
     else {
         jawaban = "Maaf, saya tidak mengerti pertanyaan Anda. Coba tanyakan pertanyaan lain tentang Fathih.";
@@ -465,7 +465,7 @@ function jawabPertanyaan() {
     }
 
     // Memanggil fungsi untuk menampilkan pesan bot dengan efek pengetikan
-    typeMessage(`Jazari: ${jawaban}`, botMessage, 10);
+    typeMessage(`Al-Jazari: ${jawaban}`, botMessage, 10);
 
     inputField.value = '';
     chatBox.scrollTop = chatBox.scrollHeight;
