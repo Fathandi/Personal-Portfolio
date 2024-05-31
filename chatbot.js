@@ -416,52 +416,94 @@ function jawabPertanyaan() {
     }
 
 
-    // Tentang Fathih
+    // Pengalaman
     else if (
-        pertanyaanLower.includes("fathih") || pertanyaanLower.includes("apriandi")) {
-        jawaban = "Fathih Apriandi adalah seorang pelajar yang lahir pada tanggal 21 April 2007 di Tangerang. " +
-            "Ia memiliki beragam minat dan keahlian di bidang teknologi informasi. Dalam kesehariannya, " +
-            "Fathih suka bermain video game dan berlatih gulat tangan serta membentuk badan. Selain itu, " +
-            "ia juga mempelajari soft skill dan hard skill di luar kurikulum sekolah. " +
-            "Dalam dunia pengembangan, Fathih memiliki pengalaman yang cukup beragam. Ia telah bekerja sebagai " +
-            "network administrator dan data analis selama lebih dari 2 tahun. Sebagai seorang developer, ia telah " +
-            "mengembangkan lebih dari 3 website dalam waktu 1-2 tahun. Selain itu, Fathih juga aktif sebagai freelancer, " +
-            "menjadi content creator dan web developer. " +
-            "Keahlian Fathih mencakup bahasa pemrograman seperti PHP, Java, Python, dan C++. Ia juga memahami database " +
-            "seperti MySQL, PostgreSQL, dan MongoDB. Di bidang front end, Fathih menguasai HTML, CSS, dan JavaScript beserta " +
-            "dengan frameworknya seperti Bootstrap, Vue, React, dan Angular. " +
-            "Saat ini, Fathih sedang menempuh pendidikan di SMA Negeri 7 Tangerang dan bekerja sebagai Front End Developer " +
-            "di PT Inti Telecom Nusantara. Cita-citanya adalah memiliki keahlian yang kompetitif di industri IT dan ia sangat " +
-            "tertarik pada teknologi informasi, kecerdasan buatan, pengembangan perangkat lunak, dan desain. " +
-            "Ayo berikan lebih banyak pertanyaan tentang Fathih!";
+        pertanyaanLower.includes("pengalaman") &&
+        pertanyaanLower.includes("fathih")) {
+        jawaban = "Fathih memiliki pengalaman yang cukup beragam dalam dunia pengembangan. Ia berpengalaman " +
+            "intern sebagai network administrator dan data analis selama lebih dari 2 tahun. Sebagai seorang " +
+            "developer, ia telah mengembangkan lebih dari 3 website dalam waktu 1-2 tahun. Selain itu, Fathih " +
+            "juga aktif sebagai freelancer, menjadi content creator dan web developer.";
     }
 
-    // Tentang Jazari
+
+    // Keahlian
     else if (
+        pertanyaanLower.includes("keahlian") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Keahlian Fathih mencakup berbagai bahasa pemrograman seperti PHP, Java, Python, dan C++. " +
+            "Ia juga memahami database seperti MySQL, PostgreSQL, dan MongoDB. Di bidang front end, Fathih menguasai " +
+            "HTML, CSS, dan JavaScript beserta framework-nya seperti Bootstrap, Vue, React, dan Angular.";
+        }
+
+
+    // Sekarang
+    else if (
+        pertanyaanLower.includes("sekarang") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Saat ini, Fathih sedang menempuh pendidikan di SMA Negeri 7 Tangerang dan bekerja sebagai Front End " +
+            "Developer di PT Inti Telecom Nusantara. Cita-citanya adalah memiliki keahlian yang kompetitif di industri IT. " +
+            "Ia sangat tertarik pada teknologi informasi, kecerdasan buatan, pengembangan perangkat lunak, dan desain.";
+        }
+
+    else if (
+        pertanyaanLower.includes("saat ini") &&
+        pertanyaanLower.includes("fathih")) {
+            jawaban = "Saat ini, Fathih sedang menempuh pendidikan di SMA Negeri 7 Tangerang dan bekerja sebagai Front End " +
+            "Developer di PT Inti Telecom Nusantara. Cita-citanya adalah memiliki keahlian yang kompetitif di industri IT. " +
+            "Ia sangat tertarik pada teknologi informasi, kecerdasan buatan, pengembangan perangkat lunak, dan desain.";
+        }
+
+
+    // Al Jazari
+    if (
         pertanyaanLower.includes("jazari")) {
         jawaban = "Al-Jazari adalah sebuah program chatbot Virtual Assistant sederhana yang dikembangkan oleh " +
             "Fathih Apriandi, apakah anda ingin mengetahui lebih banyak tentang developer Al-Jazari?";
     }
 
+    else if (
+        pertanyaanLower.includes("ya")) {
+        jawaban = "Tanyakan apapun tentang Fathih kepada saya, seperti pengalaman, keahlian, ataupun " +
+            "latarbelakangnya!";
+        }
+        
+    else if (
+        pertanyaanLower.includes("boleh")) {
+        jawaban = "Tanyakan apapun tentang Fathih kepada saya, seperti pengalaman, keahlian, ataupun " +
+            "latarbelakangnya!";
+        }
+
+    
+    // Tentang Fathih
+    else if (
+        pertanyaanLower.includes("fathih") || pertanyaanLower.includes("apriandi")) {
+        jawaban = "Fathih Apriandi adalah seorang pelajar yang lahir pada tanggal 21 April 2007 di Tangerang. " +
+            "Ia memiliki beragam minat dan keahlian di bidang teknologi informasi. Dalam kesehariannya, " +
+            "Fathih suka bermain video game, berlatih gulat tangan, dan membentuk badan. Selain itu, ia juga " +
+            "mempelajari soft skill dan hard skill di luar kurikulum sekolah.";
+    }
+        
+        
+    // Kondisi Terakhir
     else {
-        jawaban = "Maaf, saya tidak mengerti pertanyaan Anda. Coba tanyakan pertanyaan lain tentang Fathih.";
+        jawaban = pertanyaan;
     }
 
 
-    // Membuat Element Pesan User
+    // User Message
     const userMessage = document.createElement('div');
     userMessage.className = 'chat-message user';
     userMessage.textContent = `Anda: ${pertanyaan}`;
     userMessage.style.backgroundColor = 'rgb(30, 159, 171)';
     chatBox.appendChild(userMessage);
 
-    // Membuat Element Pesan Bot
+    // Bot Message
     const botMessage = document.createElement('div');
     botMessage.className = 'chat-message bot';
     chatBox.appendChild(botMessage);
 
-
-    // Memanggil fungsi untuk menampilkan pesan bot dengan efek pengetikan
+    // Memanggil Fungsi Bot Message
     typeMessage(`Al-Jazari: ${jawaban}`, botMessage, 10);
 
     inputField.value = '';
@@ -473,8 +515,7 @@ function jawabPertanyaan() {
     }
 }
 
-
-// Menambahkan Efek Pengetikan Dari Kiri
+// Bot Typing Effect
 function typeMessage(message, element, speed) {
     let index = 0;
     const typingInterval = setInterval(function () {
@@ -486,7 +527,6 @@ function typeMessage(message, element, speed) {
         }
     }, speed);
 }
-
 
 // Fungsi Alert Terimakasih
 function tampilkanAlertTerimakasih() {
@@ -501,7 +541,6 @@ function tampilkanAlertTerimakasih() {
 }
 let pertanyaanCount = 0;
 
-
 // Fungsi Alert Pembuka
 setTimeout(function () {
     Swal.fire({
@@ -509,4 +548,3 @@ setTimeout(function () {
             '<br>Tanyakan apapun tentang Fathih kepada saya, seperti pengalaman, keahlian, ataupun latarbelakangnya!'
     });
 }, 2000); // 2000 milidetik
-
