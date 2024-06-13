@@ -181,14 +181,15 @@ nav{
     padding: 3px 8px;
     font-size: 12px;
     border-radius: 5px;
-    bottom: -30px;
+    bottom: -50px;
     position: relative;
 }
 .featured-name{
     font-size: 40px;
     font-weight: 600;
     color: var(--text-color-second);
-    margin-block: 20px;
+    margin-block: 60px;
+    line-height: 1em;
 }
 .typedText{
     font-size: 30px;
@@ -964,7 +965,7 @@ footer{
         justify-content: center;
         min-height: 150px;
         width: 100%;
-        margin-top: 65px;
+        margin-top: 90px;
     }
     .image, .image img{
         width: 150px;
@@ -996,6 +997,9 @@ footer{
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
 @media only screen and (max-width: 540px){
+    .featured-image{
+        margin-top: auto;
+    }
     .featured-name{
         font-size: 20px;
         font-weight: 600;
