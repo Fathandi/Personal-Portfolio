@@ -15,6 +15,10 @@ function redirectToAssistant() {
   window.open('assistant.html', '_blank');
 }
 
+/* ----- DOWNLOAD CV FUNCION ----- */
+function loveYou(){
+  window.open('https://fathandi.github.io/I-Love-You-Animation/')
+}
 
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
 window.onscroll = function () { headerShadow() };
