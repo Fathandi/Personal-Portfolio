@@ -40,7 +40,7 @@ function headerShadow() {
 
 /* ----- TYPING EFFECT ----- */
 let typingEffect = new Typed(".typedText", {
-  strings: ["Fathih Apriandi", "Front End Developer", "Web Developer"],
+  strings: ["Front End Developer", "Web Developer"],
   loop: true,
   typeSpeed: 100,
   backSpeed: 80,
