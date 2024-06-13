@@ -454,9 +454,19 @@ function jawabPertanyaan() {
             "Ia sangat tertarik pada teknologi informasi, kecerdasan buatan, pengembangan perangkat lunak, dan desain.";
         }
 
+    
+    // Tentang Fathih
+    else if (
+        pertanyaanLower.includes("fathih")){
+        jawaban = "Fathih Apriandi adalah seorang pelajar yang lahir pada tanggal 21 April 2007 di Tangerang. " +
+            "Ia memiliki beragam minat dan keahlian di bidang teknologi informasi. Dalam kesehariannya, " +
+            "Fathih suka bermain video game, berlatih gulat tangan, dan membentuk badan. Selain itu, ia juga " +
+            "mempelajari soft skill dan hard skill di luar kurikulum sekolah.";
+    }
+
 
     // Al Jazari
-    if (
+    else if (
         pertanyaanLower.includes("jazari")) {
         jawaban = "Al-Jazari adalah sebuah program chatbot Virtual Assistant sederhana yang dikembangkan oleh " +
             "Fathih Apriandi, apakah anda ingin mengetahui lebih banyak tentang developer Al-Jazari?";
@@ -473,21 +483,12 @@ function jawabPertanyaan() {
         jawaban = "Tanyakan apapun tentang Fathih kepada saya, seperti pengalaman, keahlian, ataupun " +
             "latarbelakangnya!";
         }
-
-    
-    // Tentang Fathih
-    else if (
-        pertanyaanLower.includes("fathih") || pertanyaanLower.includes("apriandi")) {
-        jawaban = "Fathih Apriandi adalah seorang pelajar yang lahir pada tanggal 21 April 2007 di Tangerang. " +
-            "Ia memiliki beragam minat dan keahlian di bidang teknologi informasi. Dalam kesehariannya, " +
-            "Fathih suka bermain video game, berlatih gulat tangan, dan membentuk badan. Selain itu, ia juga " +
-            "mempelajari soft skill dan hard skill di luar kurikulum sekolah.";
-    }
         
         
     // Kondisi Terakhir
     else {
-        jawaban = pertanyaan;
+        jawaban = "Tanyakan apapun tentang Fathih kepada saya, seperti pengalaman, keahlian, ataupun " +
+        "latarbelakangnya!";
     }
 
 
