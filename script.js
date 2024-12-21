@@ -12,13 +12,35 @@ function myMenuFunction() {
 
 /* ----- BLUE-BTN FUNCTION ----- */
 function redirectToAssistant() {
-  window.open('assistant.html', '_blank');
+  window.open('./assistant/assistant.html', '_blank');
 }
 
 /* ----- DOWNLOAD CV FUNCION ----- */
-function loveYou(){
-  window.open('https://fathandi.github.io/I-Love-You-Animation/')
-}
+function downloadCV(){
+  Swal.fire({
+    imageUrl: "persentSkill.jpg",
+    confirmButtonText: "Auto Diagram By Fathandi"
+  }).then((result) => {
+    if (result.isConfirmed) {
+      window.location.href = 'https://fathandi.github.io/Auto-Diagram/';
+    }
+  });
+
+    // // Ganti 'path/to/cv.pdf' dengan URL atau path file CV Anda
+    // const cvFileUrl = '';
+
+    // // Buat elemen anchor untuk trigger unduhan
+    // const downloadLink = document.createElement('a');
+    // downloadLink.href = cvFileUrl;
+    // downloadLink.download = 'Fathih-Apriandi-CV.jpg'; // Ganti dengan nama file CV Anda
+  
+    // // Tambahkan elemen anchor ke dokumen dan klik
+    // document.body.appendChild(downloadLink);
+    // downloadLink.click();
+  
+    // // Hapus elemen anchor setelah unduhan     
+    // document.body.removeChild(downloadLink);
+  }
 
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
 window.onscroll = function () { headerShadow() };
