@@ -1,0 +1,36 @@
+# Aktifkan modul rewrite & kompresi
+RewriteEngine On
+
+# Aktifkan kompresi untuk performa
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# Cache static assets (1 tahun) — hashed assets aman di-cache lama
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+</IfModule>
+
+# Jangan cache index.html supaya update selalu kebaca
+<FilesMatch "index\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+</FilesMatch>
+
+# ============================================================
+# SPA ROUTING — biar langsung akses domain.com/halaman-a
+# tanpa 404, karena semua route di-handle oleh react-router.
+# ============================================================
+
+# 1. Kalau file/folder fisiknya benar ada, layani langsung.
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 2. Sisanya (rute SPA), arahkan semua ke index.html.
+RewriteRule ^ index.html [L]
